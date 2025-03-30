@@ -11,5 +11,5 @@ build/**
 .env
 package-lock.json
 yarn.lock
-pnpm-lock.json
+pnpm-lock.yaml
 bun.lock
