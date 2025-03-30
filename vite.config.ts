@@ -3,6 +3,7 @@ import type { CommonServerOptions } from "vite"
 import { sveltekit } from "@sveltejs/kit/vite"
 import { enhancedImages } from "@sveltejs/enhanced-img"
 import mkcert from "vite-plugin-mkcert"
+import tailwindcss from "@tailwindcss/vite"
 
 const serverConfig: CommonServerOptions = {
     https: true,
@@ -15,5 +16,5 @@ const serverConfig: CommonServerOptions = {
 export default defineConfig({
     server: serverConfig,
     preview: serverConfig,
-    plugins: [sveltekit(), enhancedImages(), mkcert()]
+    plugins: [tailwindcss(), sveltekit(), enhancedImages(), mkcert()]
 })
